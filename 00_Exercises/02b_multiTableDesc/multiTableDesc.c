@@ -6,7 +6,7 @@ void PrintUsageMessage(void);
 void PrintMultiTable( int tableLimit );
 
 const int lowerLimit = 1;
-const int upperLimit = 10;
+const int upperLimit = 20;
 
 int main(int argc, char*argv[])
 {
@@ -33,7 +33,7 @@ int main(int argc, char*argv[])
 		//no valid input
 		}
 	}
-	return 0;
+	return 0; 
 }
 
 
@@ -47,7 +47,7 @@ void PrintUsageMessage(void)
 
 void PrintMultiTable( int tableLimit )
 {
-	for( int i = 1; i <= tableLimit; i++)
+	for( int i = tableLimit; i >= 1; i--)
 	{
 		for( int j = 1; j <= tableLimit; j++ )
 		{
